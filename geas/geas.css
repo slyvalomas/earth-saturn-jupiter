@@ -1,0 +1,278 @@
+:root{
+    --border:2px solid black;
+    --curve: 25px 25px 0 0 ;
+    --shadow:2px 2px 5px black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    width: fit-content;
+}
+body{
+    border:var(--border);
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    position: relative;
+
+    
+}
+main{
+    margin-right: 3rem;
+}
+.links{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: var(--border); */
+    width: fit-content;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: rgb(203, 185, 185);
+}
+.link:hover{
+    --curve: 25px;
+    --border: rgb(240, 183, 183);
+    border: var(--border);
+    background-color: rgba(240, 248, 255, 0.462);
+    color: #000000;
+    border-radius: var(--curve);
+    padding:  1rem;
+}
+footer{
+    --border:1px solid #333;
+    margin: 0;
+    padding: 0;
+    --curve: 15px 15px 0 0;
+    border-radius: var(--curve);
+    background-image: url(../gg/gg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: var(--border); 
+    position: sticky;
+    bottom: 0;
+    font-size: 1rem;
+    
+}
+header{
+    font-size: 1.6rem;
+    border: var(--border);
+    text-align: center;
+    background-image: url(../gg/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    text-shadow: var(--shadow);
+    color: #00000000;
+    background-image: url(../gg/text.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.h2{
+    color: #00000000;
+
+    font-size: 2rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 1rem;
+}
+.me{
+    color: #00000000;
+    
+    text-decoration: none;
+}
+section{
+    background-image: url(../gg/nav.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 25px 25px;
+
+}
+nav{
+    
+    border-radius: 0 0 25px 25px;
+    background-image: url(../gg/h2.jpg);
+    background-position:2px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 2rem;
+    border: var(--border);
+    
+}
+.me:hover{
+    border-radius: 50px ;
+    margin-left: 0.25rem;
+    color: rgba(240, 248, 255, 0.245);
+    padding: 0 1rem;
+    background-image: url(../gg/me.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.saturn{
+    font-family: monospace;
+    font-weight: 800;
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+    background-image: url(../gg/p.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(245, 245, 245, 0.59);
+    text-shadow: var(--shadow);
+}
+.earth{
+    font-family: monospace;
+    font-weight: 800;
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 2rem 1rem;
+    color: white;
+    background-image: url(../gg/earth.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(245, 245, 245, 0.59);
+    text-shadow: var(--shadow);
+}
+.jupiter{
+    font-family: monospace;
+    font-weight: 800;
+    margin: 0;
+    font-size: 1.25rem;
+    padding: 2rem 1rem;
+    color: white;
+    background-image: url(../gg/jupiter.png);
+    background-position: center;
+    background-size: cover;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    border: 5px solid rgba(245, 245, 245, 0.59);
+    text-shadow: var(--shadow);
+}
+.h21{
+    color: rgba(255, 255, 255, 0.64);
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    background-image: url(../gg/h21.png);
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (min-width:320px){
+    header{
+        font-size: 1rem;
+        width: 100%;
+        
+    }
+    p{
+        width: 100%;
+    }
+    section{
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    body{
+        font-size: 1rem;
+        width: 100%;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .link{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width:375px){
+    header{
+        font-size: 1rem;
+        
+    }
+    section{
+        position: sticky;
+        top: 0;
+    }
+    body{
+        max-height: fit-content;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+        max-height: 120px;
+    }
+    .link{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width:682px){
+    header{
+        font-size: 1rem;
+        
+    }
+    section{
+        position: sticky;
+        top: 0;
+    }
+
+    footer{
+        width: 100%;
+        position:sticky;
+        bottom: 0;
+    }
+    .link{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width:1024px){
+    header{
+        font-size: 1rem;
+        
+    }
+    section{
+        position: sticky;
+        top: 0;
+    }
+
+    footer{
+        width: 100%;
+        position:sticky;
+        bottom: 0;
+    }
+    .link{
+        padding: 0;
+        margin: 0;
+    }
+}
